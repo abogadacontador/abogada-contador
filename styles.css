@@ -251,6 +251,13 @@ a  { color: inherit; }
 .contact__list span { font-size: .72rem; text-transform: uppercase; letter-spacing: .16em; color: var(--celeste); font-weight: 600; padding-top: .2rem; }
 .contact__list a { text-decoration: none; }
 .contact__list a:hover { color: var(--celeste); }
+.contact__map { margin-top: 2rem; border: 1px solid rgba(127,182,242,.3); background: var(--tinta-2); aspect-ratio: 2 / 1; }
+.contact__map iframe { display: block; width: 100%; height: 100%; border: 0; filter: grayscale(.35) contrast(1.05); }
+.contact__directions {
+  display: inline-block; margin-top: 1rem; color: var(--celeste); text-decoration: none;
+  font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .14em;
+}
+.contact__directions:hover { color: var(--blanco); }
 
 .form { background: var(--papel); padding: 3rem; border-top: 3px solid var(--acento); }
 .form__title { font: 600 1.5rem var(--fuente-titulos); color: var(--tinta); margin-bottom: 1.6rem; }
