@@ -340,7 +340,7 @@ a  { color: inherit; }
 .whatsapp-float svg { width: 28px; height: 28px; fill: var(--blanco); }
 
 /* Animación al aparecer */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+.reveal { opacity: 1; transform: none; }
 .reveal.is-visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
@@ -475,3 +475,10 @@ a  { color: inherit; }
 .hero__cases li { display: flex; align-items: center; gap: .7rem; min-height: 58px; padding: .85rem 0; background: none; border: 0; border-bottom: 1px solid rgba(255,255,255,.1); border-radius: 0; font-size: .9rem; }
 .about__photo img { border-radius: 12px; object-position: 48% 48%; }
 @media (max-width: 380px) { .hero__cases { grid-template-columns: 1fr; } }
+
+/* Accesibilidad y contenido visible también sin JavaScript. */
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 100; background: var(--tinta); color: white; padding: 12px 20px; border-radius: 6px; }
+.skip-link:focus { top: 12px; }
+.article .article__author { color: var(--texto-suave); font-size: .85rem; padding-bottom: 1.2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--linea); }
+.brand-logo { aspect-ratio: 1440 / 275; }
+.footer .brand-logo--inverse { aspect-ratio: 980 / 190; }
