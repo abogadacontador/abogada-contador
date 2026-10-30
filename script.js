@@ -60,7 +60,7 @@ form.addEventListener("submit", function (e) {
     "*Nombre:* " + dato("nombre") + "\n" +
     "*Teléfono:* " + dato("telefono") + "\n" +
     "*Localidad:* " + dato("localidad") + "\n" +
-    "*Obra social / prepaga:* " + dato("obra-social") + "\n\n" +
+    "*Obra Social / Prepaga:* " + dato("obra-social") + "\n\n" +
     "*Situación:* " + dato("mensaje");
 
   window.open(linkWhatsApp(texto), "_blank", "noopener");
