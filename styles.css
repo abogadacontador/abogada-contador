@@ -164,6 +164,7 @@ a  { color: inherit; }
 /* ===== Secciones ===== */
 .section { padding: 96px 0; }
 .section--ivory { background: var(--hielo); }
+.section--ivory .eyebrow, .related .eyebrow { color: #2459c2; } /* más oscuro para contraste sobre fondo claro */
 .section--dark { background: var(--tinta); }
 .section--dark h2, .section--dark h3 { color: var(--blanco); }
 .section--dark p { color: rgba(255,255,255,.7); }
@@ -325,7 +326,14 @@ a  { color: inherit; }
 /* Enlaces a guías desde el inicio */
 .areas li a { color: inherit; text-decoration: none; }
 .areas li a::after { content: " →"; color: var(--acento); }
-.areas li:has(a) { cursor: pointer; }
+.areas__more { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem 1rem; margin-top: 2rem; color: var(--tinta); font-weight: 600; }
+.areas__more a {
+  padding: .65rem 1.1rem; border: 1px solid var(--acento); text-decoration: none; color: var(--tinta);
+  font: 600 .95rem var(--fuente-titulos); transition: background .2s, color .2s;
+}
+.areas__more a::after { content: " →"; color: var(--acento); }
+.areas__more a:hover { background: var(--acento); color: var(--blanco); }
+.areas__more a:hover::after { color: var(--blanco); }
 .footer__links { list-style: none; }
 .footer__links a { text-decoration: none; }
 .footer__links a:hover { color: var(--blanco); }
