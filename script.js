@@ -8,9 +8,10 @@ function linkWhatsApp(texto) {
   return "https://wa.me/" + WHATSAPP_NUMERO + "?text=" + encodeURIComponent(texto);
 }
 
-// Botones de WhatsApp (encabezado y botón flotante)
+// Botones de WhatsApp (encabezado y botón flotante).
+// Un botón puede traer su propio mensaje con data-mensaje="...".
 document.querySelectorAll(".js-whatsapp").forEach(function (boton) {
-  boton.href = linkWhatsApp(MENSAJE_INICIAL);
+  boton.href = linkWhatsApp(boton.dataset.mensaje || MENSAJE_INICIAL);
   boton.target = "_blank";
   boton.rel = "noopener";
 });
@@ -32,8 +33,9 @@ menu.querySelectorAll("a").forEach(function (link) {
   });
 });
 
-// Formulario de contacto -> WhatsApp
+// Formulario de contacto -> WhatsApp (solo en la página de inicio)
 const form = document.getElementById("contact-form");
+if (form) {
 const errorMsg = form.querySelector(".form__error");
 
 form.addEventListener("submit", function (e) {
@@ -73,6 +75,7 @@ form.querySelectorAll("[required]").forEach(function (campo) {
     campo.removeAttribute("aria-invalid");
   });
 });
+}
 
 // Sombra del encabezado al hacer scroll
 const header = document.querySelector(".header");
