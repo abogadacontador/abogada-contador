@@ -74,5 +74,27 @@ form.querySelectorAll("[required]").forEach(function (campo) {
   });
 });
 
+// Sombra del encabezado al hacer scroll
+const header = document.querySelector(".header");
+window.addEventListener("scroll", function () {
+  header.classList.toggle("is-scrolled", window.scrollY > 10);
+}, { passive: true });
+
+// Aparición suave de las secciones
+const revelar = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (entrada) {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add("is-visible");
+        observer.unobserve(entrada.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revelar.forEach(function (el) { observer.observe(el); });
+} else {
+  revelar.forEach(function (el) { el.classList.add("is-visible"); });
+}
+
 // Año del pie de página
 document.getElementById("year").textContent = new Date().getFullYear();
