@@ -30,6 +30,7 @@ menu.querySelectorAll("a").forEach(function (link) {
   link.addEventListener("click", function () {
     menu.classList.remove("is-open");
     menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Abrir menú");
   });
 });
 
@@ -66,7 +67,7 @@ form.addEventListener("submit", function (e) {
     "*Situación:* " + dato("mensaje");
 
   window.open(linkWhatsApp(texto), "_blank", "noopener");
-  form.reset();
+  // Conservar los datos por si el visitante vuelve o WhatsApp no se abre.
 });
 
 form.querySelectorAll("[required]").forEach(function (campo) {
