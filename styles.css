@@ -1,3 +1,13 @@
+/* ===== Tipografías (alojadas en el sitio para que cargue más rápido) ===== */
+@font-face {
+  font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url("/assets/fonts/inter.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manrope"; font-style: normal; font-weight: 500 700; font-display: swap;
+  src: url("/assets/fonts/manrope.woff2") format("woff2");
+}
+
 /* ===== Colores y tipografía (editá acá para cambiar el estilo) ===== */
 :root {
   /* Paleta "Medianoche y celeste" */

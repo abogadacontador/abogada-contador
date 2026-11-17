@@ -14,7 +14,13 @@ document.querySelectorAll(".js-whatsapp").forEach(function (boton) {
   boton.href = linkWhatsApp(boton.dataset.mensaje || MENSAJE_INICIAL);
   boton.target = "_blank";
   boton.rel = "noopener";
+  boton.addEventListener("click", function () { medir("clic_whatsapp"); });
 });
+
+// Medición de conversiones (ver google-tag.js). Si no hay medición, no hace nada.
+function medir(evento) {
+  if (typeof window.registrarConversion === "function") window.registrarConversion(evento);
+}
 
 // Menú en celular
 const menuToggle = document.querySelector(".menu-toggle");
@@ -66,6 +72,7 @@ form.addEventListener("submit", function (e) {
     "*Obra Social / Prepaga:* " + dato("obra-social") + "\n\n" +
     "*Situación:* " + dato("mensaje");
 
+  medir("envio_formulario");
   window.open(linkWhatsApp(texto), "_blank", "noopener");
   // Conservar los datos por si el visitante vuelve o WhatsApp no se abre.
 });
