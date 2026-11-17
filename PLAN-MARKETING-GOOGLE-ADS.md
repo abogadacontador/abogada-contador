@@ -134,6 +134,32 @@ Google usa "anuncios de búsqueda responsivos": cargás hasta **15 títulos (má
 3. Mantenerlo **30 días sin tocar demasiado**: Google necesita ese tiempo para aprender.
 4. Tené en cuenta que sobre lo gastado se **suman impuestos** en la factura.
 
+### Datos reales del Planificador (Entre Ríos, nov 2025 – oct 2026)
+
+Consulta hecha el 16/11/2026. Como la cuenta todavía no publicó campañas, Google muestra rangos y no números exactos.
+
+- **Volumen**: cada búsqueda relevante tiene entre **10 y 100 búsquedas por mes** en toda la provincia. Es un nicho chico: pocas personas buscan, pero las que buscan tienen un problema concreto.
+- **Costo por clic** (para aparecer arriba de todo):
+  | Búsqueda | Rango bajo | Rango alto |
+  |---|---|---|
+  | amparo de salud | 202 ARS | 1.474 ARS |
+  | amparo de salud contra obra social | 232 ARS | 1.007 ARS |
+- **Presupuesto inicial recomendado**: **5.000 a 7.500 ARS por día** (unos 150.000 a 225.000 ARS por mes), con **CPC máximo de 1.500 ARS**. Alcanza para 4 o 5 clics diarios, que es más o menos todo lo que hay en la provincia. Con tan poco volumen, es probable que Google no llegue a gastarlo todo.
+
+**Palabras clave elegidas** (todas aparecieron en el Planificador):
+- Genérico: `"amparo de salud"`, `"amparo salud"`, `"amparo en salud"`, `"amparo por salud"`, `"amparo judicial por salud"`, `"amparo de salud contra obra social"`, `"amparo obras sociales"`, `"amparos contra obras sociales"`, `"abogado obra social"`, `"abogados contra obras sociales"`, `"abogado especialista en obras sociales"`
+- PAMI: `"amparo pami"`, `"amparo contra pami"`, `"amparo de salud contra pami"`, `"recurso de amparo pami"`
+- Prepagas: `"amparo prepaga"`, `"amparo salud prepaga"`, `"amparo de salud contra osde"`
+- Discapacidad: `"amparo discapacidad"`, `"amparo por discapacidad"`, `"amparo obra social discapacidad"`
+- Cirugías/internación: `"amparo salud internacion domiciliaria"`
+- OSER y medicamentos: casi no tienen búsquedas medibles. Se cargan igual (`"amparo oser"`, `"amparo iosper"`, `"amparo medicamentos"`): no cuestan nada si nadie las busca.
+
+**Negativas que salen de los datos** (sumar a las de la sección 4):
+- Otra intención: `modelos`, `libro`, `procedimiento`, `ley`, `competencia`, `federal`.
+- Abogados buscando *su propia* obra social: `caja de abogados`, `casa de abogados`, `colegio de abogados`, `para abogados`, `de los abogados`.
+- Preguntas de cobertura que no son un reclamo: `brackets`, `ortodoncia`, `implantes dentales`, `protesis dentales`, `esteticas`, `estetica`, `abdominoplastia`, `anteojos`, `lentes`, `sepelio`, `sepelios`, `pañales`, `ecografias`, `adn`, `pase sanitario`.
+- Obras sociales de otras provincias: `ioma`, `apross`.
+
 **Estrategia de oferta por etapas:**
 | Etapa | Cuándo | Estrategia |
 |---|---|---|

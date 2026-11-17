@@ -1,0 +1,6 @@
+# Archivos internos que GitHub Pages no debe publicar en la web.
+exclude:
+  - PLAN-MARKETING-GOOGLE-ADS.md
+  - SEO-LANZAMIENTO.md
+  - README.md
+  - .claude
