@@ -1,10 +1,10 @@
-/* ===== Tipografías (alojadas en el sitio para que cargue más rápido) ===== */
+/* ===== Tipografías (alojadas en el sitio y precargadas; "optional" evita que el texto se redibuje al llegar la fuente) ===== */
 @font-face {
-  font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap;
+  font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: optional;
   src: url("/assets/fonts/inter.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Manrope"; font-style: normal; font-weight: 500 700; font-display: swap;
+  font-family: "Manrope"; font-style: normal; font-weight: 500 700; font-display: optional;
   src: url("/assets/fonts/manrope.woff2") format("woff2");
 }
 
