@@ -1,6 +1,6 @@
 // ===== MEDICIÓN DE GOOGLE (Analytics 4 + Google Ads) =====
 // Pegá acá tus IDs. Mientras queden los de ejemplo (con XXXX), no se carga nada.
-const GOOGLE_ANALYTICS_ID = "G-XXXXXXXXXX";   // Google Analytics 4 → Administrar → Flujos de datos
+const GOOGLE_ANALYTICS_ID = "G-DVCZL1KK50";   // Google Analytics 4 → Administrar → Flujos de datos
 const GOOGLE_ADS_ID = "AW-XXXXXXXXXX";        // Google Ads → Objetivos → Conversiones → Configuración de la etiqueta
 // Opcional: la parte después de la barra de la etiqueta de conversión de Ads
 // (ej. en "AW-123456789/AbC-dEfGh" es "AbC-dEfGh"). Si importás las conversiones desde GA4, dejala vacía.
